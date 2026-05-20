@@ -59,7 +59,7 @@
 - 添加通用依赖（如 `kotlin-stdlib`）
 
 ### 模块配置规范
-模块 `build.gradle.kts` 配置方式：
+各模块 `build.gradle.kts` 配置方式：
 - 通过 `plugins { id(...) }` 应用 Convention Plugin
 - 仅配置模块特有属性（如 `namespace`、`applicationId`）
 
