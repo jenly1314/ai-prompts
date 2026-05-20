@@ -68,7 +68,6 @@
 各业务模块的 `build.gradle.kts` 必须：
 - 通过 `plugins { id(...) }` 应用 Convention Plugin
 - 仅配置模块特有属性（如 `namespace`、`applicationId`）
-- 不得直接声明版本号或依赖坐标
 
 ### 验证要求
 配置完成后必须能成功运行以下命令：
