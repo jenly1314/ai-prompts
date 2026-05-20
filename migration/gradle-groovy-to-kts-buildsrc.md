@@ -90,11 +90,43 @@ project-root/
 ## 示例代码
 
 ```properties
-// gradle.properties
+# gradle.properties
 
 # 应用版本号
 VERSION_CODE=1
 VERSION_NAME=1.0.0
+```
+
+```kotlin
+// buildSrc/build.gradle.kts
+
+plugins {
+    `kotlin-dsl`
+}
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+dependencies {
+    implementation("com.android.tools.build:gradle:8.13.0")
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.25")
+}
+
+gradlePlugin {
+    plugins {
+        create("applicationConvention") {
+            id = "com.example.application.convention"
+            implementationClass = "ApplicationConventionPlugin"
+        }
+        create("libraryConvention") {
+            id = "com.example.library.convention"
+            implementationClass = "LibraryConventionPlugin"
+        }
+    }
+}
+
 ```
 
 ```kotlin
@@ -234,38 +266,6 @@ class LibraryConventionPlugin : Plugin<Project> {
         dependencies {
             implementation(Dependencies.kotlinStdlib)
             //其他通用依赖
-        }
-    }
-}
-
-```
-
-```kotlin
-// buildSrc/build.gradle.kts
-
-plugins {
-    `kotlin-dsl`
-}
-
-repositories {
-    google()
-    mavenCentral()
-}
-
-dependencies {
-    implementation("com.android.tools.build:gradle:8.13.0")
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.25")
-}
-
-gradlePlugin {
-    plugins {
-        create("applicationConvention") {
-            id = "com.example.application.convention"
-            implementationClass = "ApplicationConventionPlugin"
-        }
-        create("libraryConvention") {
-            id = "com.example.library.convention"
-            implementationClass = "LibraryConventionPlugin"
         }
     }
 }
