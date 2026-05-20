@@ -44,7 +44,7 @@
 
 ### 模块配置规范
 
-模块 `build.gradle.kts` 配置方式：
+各模块 `build.gradle.kts` 配置方式：
 - 通过 `alias(libs.plugins.xxx)` 应用插件
 - 通过 `libs.versions.xxx.get().toInt()` 读取 SDK 版本
 - 通过 `libs.xxx` 引用依赖
