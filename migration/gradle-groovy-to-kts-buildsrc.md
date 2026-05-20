@@ -32,10 +32,6 @@
 
 ### 版本管理规范
 
-**版本定义优先级（应用版本号）**
-
-
-
 **SDK 版本定义**
 
 `compileSdk`、`minSdk`、`targetSdk` 统一在 `Versions.kt` 中定义，不得在模块中硬编码。
