@@ -22,11 +22,11 @@
 > **新项目说明：** 如果是全新项目，直接使用 Kotlin DSL 编写构建文件即可，无需迁移步骤。
 
 ### buildSrc 结构
-创建 `buildSrc` 目录，必须包含以下文件：
+创建 `buildSrc` 目录，主要包含以下文件：
 
 | 文件 | 职责 |
 |------|------|
-| `Versions.kt` | 定义所有版本常量（SDK 版本、插件版本、依赖库版本、应用版本） |
+| `Versions.kt` | 定义所有版本常量（SDK 版本、插件版本、依赖库版本） |
 | `Dependencies.kt` | 定义所有依赖坐标，引用 `Versions.kt` 中的版本 |
 | `Plugins.kt` | 定义所有插件 ID 常量 |
 | `DependencyExtensions.kt` | 定义 `DependencyHandler` 的扩展函数（`implementation`、`api` 等） |
@@ -59,12 +59,12 @@
 - 添加通用依赖（如 `kotlin-stdlib`）
 
 ### 模块配置规范
-迁移后的模块 `build.gradle.kts` 必须：
+模块 `build.gradle.kts` 配置方式：
 - 通过 `plugins { id(...) }` 应用 Convention Plugin
 - 仅配置模块特有属性（如 `namespace`、`applicationId`）
 
 ### 验证要求
-迁移完成后必须能成功运行以下命令：
+完成后必须能成功运行以下命令：
 ```bash
 ./gradlew build
 ```
