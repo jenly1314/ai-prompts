@@ -70,7 +70,7 @@
 - 仅配置模块特有属性（如 `namespace`、`applicationId`）
 
 ### 验证要求
-配置完成后必须能成功运行以下命令：
+完成后必须能成功运行以下命令：
 ```bash
 ./gradlew build
 ```
