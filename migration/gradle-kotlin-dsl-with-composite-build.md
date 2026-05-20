@@ -1,4 +1,4 @@
-# Gradle 复合构建 + build-logic 统一版本管理
+# 基于 Gradle DSL + Composite Build 统一管理
 
 ## 目标
 
