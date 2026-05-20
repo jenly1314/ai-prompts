@@ -1,8 +1,8 @@
-# Gradle Groovy 转 KTS + buildSrc 统一版本管理
+# 基于 Kotlin DSL 和 buildSrc 的 Gradle 统一管理
 
 ## 目标
 
-将现有项目的构建文件从 Groovy DSL 迁移到 Kotlin DSL，并通过 **buildSrc** 统一管理所有依赖版本、插件 ID 和依赖声明，实现：
+采用 **Kotlin DSL** 作为 Gradle 构建语言，并通过 **buildSrc** 集中管理所有依赖版本、插件 ID 和依赖声明，实现：
 
 - 类型安全的版本和依赖访问
 - 消除模块间的重复配置代码
@@ -13,10 +13,13 @@
 
 ## 核心要求
 
-### 迁移范围
+### 迁移范围（可选，适用于从 Groovy 迁移的场景）
+
 - 将 `settings.gradle` 转换为 `settings.gradle.kts`
 - 将所有模块的 `build.gradle` 转换为 `build.gradle.kts`
 - 保留原有的自定义任务和构建逻辑，仅转换语法
+
+> **新项目说明：** 如果是全新项目，直接使用 Kotlin DSL 编写构建文件即可，无需迁移步骤。
 
 ### buildSrc 结构
 创建 `buildSrc` 目录，必须包含以下文件：
