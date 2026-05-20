@@ -1,4 +1,4 @@
-# 基于 Kotlin DSL 和 Version Catalog 的 Gradle 统一管理
+# Kotlin DSL 和 Version Catalog 的 Gradle 统一管理
 
 ## 目标
 
