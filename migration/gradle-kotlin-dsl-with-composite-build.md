@@ -1,4 +1,4 @@
-# 基于 Gradle DSL + Composite Build 统一管理
+# Kotlin DSL 和 Composite Build 的 Gradle 统一管理
 
 ## 目标
 
