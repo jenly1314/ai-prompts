@@ -28,11 +28,11 @@
 - 保留原有的自定义任务和构建逻辑，仅转换语法
 
 ### build-logic 结构
-创建独立的 `build-logic` 构建模块，必须包含以下文件：
+创建独立的 `build-logic` 构建模块，主要包含以下文件：
 
 | 文件 | 职责 |
 |------|------|
-| `Versions.kt` | 定义所有版本常量（SDK 版本、插件版本、依赖库版本、应用版本） |
+| `Versions.kt` | 定义所有版本常量（SDK 版本、插件版本、依赖库版本） |
 | `Dependencies.kt` | 定义所有依赖坐标，引用 `Versions.kt` 中的版本 |
 | `Plugins.kt` | 定义所有插件 ID 常量 |
 | `DependencyExtensions.kt` | 定义 `DependencyHandler` 的扩展函数（`implementation`、`api` 等） |
@@ -65,7 +65,7 @@
 - 添加通用依赖（如 `kotlin-stdlib`）
 
 ### 模块配置规范
-各业务模块的 `build.gradle.kts` 必须：
+各模块 `build.gradle.kts` 配置方式：
 - 通过 `plugins { id(...) }` 应用 Convention Plugin
 - 仅配置模块特有属性（如 `namespace`、`applicationId`）
 
@@ -73,7 +73,6 @@
 配置完成后必须能成功运行以下命令：
 ```bash
 ./gradlew build
-./gradlew :app:assembleDebug
 ```
 ## 目录结构
 
