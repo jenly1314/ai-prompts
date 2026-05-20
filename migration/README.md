@@ -3,6 +3,7 @@
 ## Prompts / 提示词
 
 <!-- prompts start -->
-- [Gradle Groovy 转 KTS + buildSrc 版本管理](gradle-groovy-to-kts-buildsrc.md)
-- [Gradle Groovy 转 KTS + Version Catalog](gradle-groovy-to-kts-toml.md)
+- [基于 Kotlin DSL 和 buildSrc 的 Gradle 统一管理](gradle-kotlin-dsl-with-buildsrc.md)
+- [Gradle 复合构建 + build-logic 统一版本管理](gradle-kotlin-dsl-with-composite-build.md)
+- [基于 Kotlin DSL 和 Version Catalog 的 Gradle 统一管理](gradle-kotlin-dsl-with-version-catalog.md)
 <!-- prompts end -->

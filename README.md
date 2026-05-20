@@ -5,8 +5,9 @@
 
 <!-- prompts start -->
 ### [Migration / 迁移](migration)
-- [Gradle Groovy 转 KTS + buildSrc 版本管理](migration/gradle-groovy-to-kts-buildsrc.md)
-- [Gradle Groovy 转 KTS + Version Catalog](migration/gradle-groovy-to-kts-toml.md)
+- [基于 Kotlin DSL 和 buildSrc 的 Gradle 统一管理](migration/gradle-kotlin-dsl-with-buildsrc.md)
+- [Gradle 复合构建 + build-logic 统一版本管理](migration/gradle-kotlin-dsl-with-composite-build.md)
+- [基于 Kotlin DSL 和 Version Catalog 的 Gradle 统一管理](migration/gradle-kotlin-dsl-with-version-catalog.md)
 <!-- prompts end -->
 
 ## Other / 其他
