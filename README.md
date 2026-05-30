@@ -8,6 +8,7 @@
 - [Kotlin DSL 和 buildSrc 的 Gradle 统一管理](migration/gradle-kotlin-dsl-with-buildsrc.md)
 - [Kotlin DSL 和 Composite Build 的 Gradle 统一管理](migration/gradle-kotlin-dsl-with-composite-build.md)
 - [Kotlin DSL 和 Version Catalog 的 Gradle 统一管理](migration/gradle-kotlin-dsl-with-version-catalog.md)
+- [Kotlin 迁移规范：Java 到 Kotlin 转换](migration/java-to-kotlin-migration-guide.md)
 <!-- prompts end -->
 
 ## Other / 其他
